@@ -15,7 +15,7 @@ module.exports = {
     // useful if you run your app from another point like django
     "webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000",
     // And then the actual application
-    "./src/index.js"
+    "./src/js/index.js"
   ],
   devtool: "inline-source-map",
   devServer: {
@@ -29,11 +29,7 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin()
-    // // OccurrenceOrderPlugin is needed for webpack 1.x only
-    // new webpack.optimize.OccurrenceOrderPlugin(),
-    // new webpack.HotModuleReplacementPlugin(),
-    // // Use NoErrorsPlugin for webpack 1.x
-    // new webpack.NoEmitOnErrorsPlugin()
+
   ],
   output: {
     filename: "[name].bundle.js",

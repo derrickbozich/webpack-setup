@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "../fonts/PitchSansWeb-Regular";
+  src: url("../fonts/PitchSansWeb-Regular.eot");
+  src: url("../fonts/PitchSansWeb-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/PitchSansWeb-Regular.woff2") format("woff2"),
+    url("../fonts/PitchSansWeb-Regular.woff") format("woff");
+}
+.hello {
+  color: red;
+  background: url("../images/icon.png");
+  font-family: 'PitchSansWeb-Regular';
+  height: 100vh;
+}
